@@ -12,8 +12,8 @@ class DetailViewController: UIViewController {
     
     var currentContactItem  :ContactItem?
     
-    @IBOutlet var firstNameLabel :UILabel!
-    @IBOutlet var lastNameLabel  :UILabel!
+    @IBOutlet var firstNameTextField :UITextField!
+    @IBOutlet var lastNameTextField  :UITextField!
 
 
     override func viewDidLoad() {
@@ -22,8 +22,8 @@ class DetailViewController: UIViewController {
             self.navigationController!.popViewController(animated: true)
             return
         }
-        firstNameLabel.text = contactItem.firstName
-        lastNameLabel.text = contactItem.lastName
+        firstNameTextField.text = contactItem.firstName
+        lastNameTextField.text = contactItem.lastName
 
     }
 
